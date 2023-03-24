@@ -1,863 +1,390 @@
-<!doctype html> 
+<!DOCTYPE html>
 <html>
-<head>
-  <title>Aneeshan Sain</title>
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <!--<link rel = "icon" type = "image/png" href = "images/iem.png">   background: linear-gradient(90deg, rgba(177, 64, 200, 1) 0%, rgba(109, 9, 121, 1) 35%, rgba(45, 1, 62, 1) 100%;   background-color : #fff;-->
-  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
-  <meta name="description" property="og:description" content="This is Aneeshan Sain's personal homepage">
-  
-  <style>
-    .img-round-rect {border-radius: 5mm;}
-    .leftSideBar{display:none !important;}
-    .rightSideBar{display:none !important;}
-
-    @media screen and (min-width:600px) and (max-width: 992px)
-    {/*design for screen-width >= 600px and <=992px*/
-      /* div {margin: 0 auto; width: 90%;} */
-    }
-
-    h1 { padding : 0; margin : 0; }
-    body { margin:auto; padding : 20px 0; font-size : 20px; background-color:#fff; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
-    /* background-image : url("images/bg2.png"); in body*/ 
-    
-    #me { margin-left : 25px; border : 0 solid black; float : right; margin-bottom : 0; margin-right:25px;}
-    #content { display : block; margin-right : 0px;}
-    a { text-decoration : none; }
-    a:hover { text-decoration : underline; }
-    a:link,a:visited { color: #1367a7; }    
-
-    a.invisible { color : inherit; text-decoration : inherit; }
-    .publogo { margin-top : 0px; margin-right : 10px; float : left; border : 0; width: 180px; vertical-align: middle;}
-    
-    .publication { clear : left; padding-bottom : 10px;}
-    .codelogo { margin-right : 10px; float : left; border : 0;}
-    .code { clear : left; padding-bottom : 10px; vertical-align :middle;} 
-    .code .download a { display : block; margin : 0 15px; float : left;}
-    #simpsons { margin : 5px auto; text-align : center; color : #FFFFFF; }
-
-    .icon-bar {
-      position: fixed;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-    }
-
-    .icon-bar a {
-      display: block;
-      text-align: center;
-      padding: 16px;
-      transition: all 0.3s ease;
-      color: white;
-      font-size: 20px;
-    }
-
-    .icon-bar a:hover { background-color: #000;}
-
-    .default_text{ font-size: 18px; }
-    .content { margin-left: 75px; font-size: 30px;}
-
-    .glow {
-      font-size: 15px;
-      color: rgb(253, 45, 45);
-      /* text-align: center; */
-      -webkit-animation: glow 0.1s ease-in-out infinite alternate;
-      -moz-animation: glow 0.1s ease-in-out infinite alternate;
-      animation: glow 0.2s ease-in-out infinite alternate;
-    }
-
-    @keyframes glow { /*-webkit-*/
-      from {text-shadow: 0 0 10px #fff, 0 0 4px #fff,    0 0 14px #e60073, 0 0 16px #e60073, 0 0 18px #e60073, 0 0 20px #e60073, 0 0 22px #e60073;} 
-      to   {text-shadow: 0 0 20px #fff, 0 0 8px #ff4da6, 0 0 24px #ff4da6, 0 0 26px #ff4da6, 0 0 28px #ff4da6, 0 0 30px #ff4da6, 0 0 32px #ff4da6;} 
-    }
-
-    /* Icon details */
-    .ai-orcid-square    {background: white; color: rgb(143, 212, 39); }
-    .fa-linkedin-square {background: white; color: #007bb5; }
-    .fa-graduation-cap  {background: white; color: grey; }
-    .fa-github-square   {background: white; color: black; }
-    .fa-envelope        {background: white; color: black; }
-    .fa-phone-square    {background: white; color: green;}
-    .fa-youtube-play    {background: white; color: #bb0000;}
-    .fa:hover           {opacity: 0.6; text-decoration: none;}
-    .ai:hover           {opacity: 0.6; text-decoration: none;}
-    .idblp:hover        {opacity: 0.6; text-decoration: none;}
-    
-
-    #container { width : 1000px; margin : 0 auto;  background-color : #fff;  padding : 25px;  text-align: left; box-shadow: 0px 0px 10px #FFFFFF;}	
-    
-    /* Style the tab content (and add height:100% for full page content) */
-    .tabContent {
-      width : 900px;
-      color: black;
-      background-color : #fff;
-      margin: 0 auto;
-      display: none;
-      padding: 25px ; /* height, width*/
-      height: 100%;
-      text-align: left;
-      box-shadow: 0px 0px 10px #000; 
-      border-radius: 5mm ;
-      border: none;
-    }
-
-    #Publications  {box-shadow: 0px 0px 2px #000; } 
-    .subTabContent {width : 800px; box-shadow: 0px 0px 10px #000;}
-
-    /* Style tab links */
-    .tabLink {
-      outline: none;
-      border: none;
-      border-top-left-radius: 5mm;
-      border-top-right-radius: 5mm;
-      background-color: #555;
-      color: white;
-      text-align: center;   
-      cursor: pointer;
-      padding: 10px 20px;
-      font-size: 24px;
-      width: 200px;
-      margin: 0 auto;
-    }
-
-    .subTabLink {background-color: grey; padding: 5px 10px; font-size: 20px; width: 100px;}
-    .tabLink:hover {opacity: 0.6; text-decoration: none;}    
-    .cv {border-radius: 5mm; border: none; box-shadow: 0px 0px 5px #000;  }
-
-    /*
-    background-color: #9AB95F;
-    color: #007bb5;
-    */
-  </style>
-
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175793439-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-175793439-1');
-  </script>
-  <!-- End Google Analytics -->
-
-</head>
-
-<body>
-  <center>
-    <div id="container">
-      <!---------------------------------------------------------------------------------Personal Data----------------------------------------->
-      <table border="0" cellpadding="0" cellspacing="4">
-        <!-- 4 columns -->
-        <tr> 
-          <td valign="top" rowspan=0><img height=350 border=0 class=img-round-rect src="images/anee.png"></td>
-          <td> </td>
-          <td> </td>
-          <td rowspan="4" colspan="0" halign="right" width=200px>
-            <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=D_32EYBFDKkMEt6DcrQb-esnQrRzeGq3VGJwSp-hAxA"></script>
-          </td>
-        </tr>
-        <tr>
-          <!-- Image -->
-          <td>&nbsp;</td>
-          <td valign="top"><span class="h1"><h1>Aneeshan Sain</h1></b></span>     
-          <!-- Globe -->
-        </tr>
-        <tr>
-          <!-- Image -->
-          <td>&nbsp;</td>
-          <td>
-            PhD Student <br>  
-            <a href="http://sketchx.ai/" style = "font-size: 20px"> SketchX Lab</a>,
-            <a href="https://www.surrey.ac.uk/centre-vision-speech-signal-processing" style = "font-size: 20px">CVSSP</a>, 
-            <a href="https://www.surrey.ac.uk/" style = "font-size: 20px"> University of Surrey</a>.
-            <br><i class="fa fa-envelope fa-1x" aria-hidden="true"></i>  <span style="font-size:18px">saneeshan95 [at] gmail [dot] com</span>
-            <br><i class="fa fa-envelope fa-1x" aria-hidden="true" style="color:rgba(134, 19, 19, 0.747);"></i>  <span style="font-size:18px">a [dot] sain [at] surrey [dot] ac [dot] uk</span>
-            <!-- <br>&nbsp; -->
-          </td>
-          <!-- Globe --> <!-- <a href = "mailto: a.sain@surrey.ac.uk"></a> -->
-        </tr>  
-        <tr>
-          <!-- Image -->
-          <td>&nbsp;</td>
-          <td>
-            <!-- <a href="Resume/Current_CV.pdf" target="_blank"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i></a> &nbsp; -->
-            <a href="https://scholar.google.com/citations?user=_QWFBvoAAAAJ&hl=en" target="_blank"><i class="fa fa-graduation-cap fa-2x" aria-hidden="true"></i></a> &nbsp;
-            <a href="https://github.com/aneeshan95" target="_blank"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a> &nbsp;
-            <a href="https://in.linkedin.com/in/aneeshan-sain-1046a6bb" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a> &nbsp;
-            <a href="https://dblp.org/pid/203/8684.html" target="_blank"><img src="images/dblp.svg" alt="DBLP profile" width="34px" height="34px" class="idblp"/></a> &nbsp;
-            <a href="https://orcid.org/0000-0001-7789-3060" target="_blank"> <i class="ai ai-orcid-square ai-2x"></i></a> &nbsp;
-            <a href="https://www.youtube.com/channel/UCSBQ2eOhkV0sbULPTPb1zrw?sub_confirmation=1" target="_blank"> <i class="fa fa-youtube-play fa-2x"></i></a>
-          </td>
-          <!-- Globe -->
-        </tr>
-        <tr>
-          <!-- Image -->
-          <td>&nbsp;</td>
-          <td colspan="2">  <!-- no other column beside this -->
-            <p align="justify" style="font-size: 18px;"> 
-              My research is focused on Deep Learning and its applications in Computer Vision. My specific area of interest is deep learning-based visual understanding of sketches. I am currently working under the supervision of <a href="https://www.surrey.ac.uk/people/yi-zhe-song" >Prof. Yi-Zhe Song</a> Director, SketchX Lab, CVSSP, University of Surrey; co-supervised by <a href="https://www.surrey.ac.uk/people/tao-xiang">Prof. Tao Xiang</a>.
-              &nbsp; <button class="cv"><a href="Resume/Current_CV.pdf" target="_blank">Résumé</a></button>
-              <!-- and <a href="https://www.surrey.ac.uk/people/yongxin-yang">Dr. Yongxin Yang</a>.  -->
-            </p>
-          </td>
-        </tr>
-      </table>
-      <p> Top-venue Conference publications (as of March 2023): <b>14 CVPR, 2 ECCV, 3 ICCV, 1 BMVC(Oral).</b> </p> 
-
-      <!---------------------------------------------------------------------------------Recent Activities----------------------------------------->
-      <h3 style="display:inline;">Recent Activities</h3>
-      <table style="margin-left: 20px">
-        <tr>
-          <td style="font-family: Times;"><b>Mar</b></td> <td><b>2023</b></td>
-          <td>: 6 papers accepted in <a href="https://cvpr2023.thecvf.com/"><i>CVPR 2023</i></a>. &nbsp; </a><sup><font class=glow><b>NEW</b></font></sup></td>
-        </tr>
-        <tr>
-          <td style="font-family: Times;"><b>July</b></td> <td><b>2022</b></td>
-          <td>: 2 papers accepted in <a href="https://eccv2022.ecva.net/"><i>ECCV 2022</i></a>. &nbsp; </a></td>
-        </tr>
-      </table>
-      <table style="margin-left: 20px">
-        <tr>
-          <td><img width=900px, border=0 src="images/CVPR_2023/self.jpg"> </td>
-        </tr> 
-        <!-- <tr>
-          <td style="font-family: Times;"><b>July</b></td> <td><b>2022</b></td>
-          <td>: Invited as a reviewer for <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385"><i>IEEE TNNLS</i></a>, <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=83"><i>IEEE TIP</i></a>. &nbsp; </a><sup><font class=glow><b>NEW</b></font></sup></td>
-        </tr> 
-        <tr>
-          <td style="font-family: Times;"><b>May</b></td> <td><b>2022</b></td>
-          <td>: Invited as a reviewer for <a href="https://eccv2022.ecva.net/"><i>ECCV 2022</i></a>. &nbsp; </a><sup><font class=glow><b>NEW</b></font></sup></td>
-        </tr>
-        <tr>
-          <td style="font-family: Times;"><b>Mar</b></td> <td><b>2022</b></td>
-          <td>: 4 papers accepted in <a href="http://cvpr2022.thecvf.com/"><i>CVPR 2022</i></a>. &nbsp; </td>
-        </tr>
-        <tr>
-          <td style="font-family: Times;"><b>Feb</b></td> <td><b>2022</b></td>
-          <td>: Invited as a reviewer for <a href="https://aij.ijcai.org/"><i>Artificial Intelligence</i></a>, <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=93"><i>IEEE Multimedia </i></a>. &nbsp; </a><sup><font class=glow><b>NEW</b></font></sup></td>        
-        </tr>
-        <tr>
-          <td style="font-family: Times;"><b>Jan</b></td> <td><b>2022</b></td>
-          <td>: Invited as a reviewer for <a href="https://cvpr2022.thecvf.com/"><i>CVPR 2022</i></a>, <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34"><i>TPAMI</i></a>.  &nbsp; </a><sup><font class=glow><b>NEW</b></font></sup></td>        
-        </tr>
-        <tr>
-          <td style="font-family: Times;"><b>Aug</b></td> <td><b>2021</b></td>
-          <td>: Invited as a reviewer for <a href="https://pg2021.org/"><i>PG 2021</i></a>.</td>        
-        </tr>
-        <tr>
-          <td style="font-family: Times;"><b>July</b></td> <td><b>2021</b></td>
-          <td>: 3 papers accepted in <a href="http://iccv2021.thecvf.com/home"><i>ICCV 2021</i>.</td>
-          <td rowspan="0" align="right" > Gap </td> 
-          <td rowspan="0" halign="right" width=150px> any item </td>
-        </tr>
-        <tr>
-          <td style="font-family: Times;"><b>June</b></td> <td><b>2021</b></td>
-          <td>: Invited as a reviewer for <a href="http://iccv2021.thecvf.com/"><i>ICCV 2021</i></a>.</td>        
-        </tr>
-        <tr>
-          <td style="font-family: Times;"><b>Feb</b></td> <td><b>2021</b></td>
-          <td>: 4 papers accepted in <a href="http://cvpr2021.thecvf.com/"><i>CVPR 2021</i></a>.</td>
-        </tr> -->
-      </table>
-    </div>
-
-    <!-----------------------------------------------------------------------------------Buttons-------------------------------------->
-    <button class="tabLink" onclick="openPage('Publications', this, '#9AB95F', '#007bb5')" id="defaultOpenMain">Publications</button>
-    <button class="tabLink" onclick="openPage('Experiences',  this, '#9AB95F', '#007bb5')">Experiences</button>
-    <!-- <button class="tabLink" onclick="openPage('Resume',  this, '#9AB95F', '#007bb5')">Resume</button> -->
-    <!-- <button class="tabLink" onclick="openPage('Contact', this, '#9AB95F', '#007bb5')">Contact</button> -->
-    <!-- <button class="tabLink" onclick="openPage('About', this, 'orange')">About</button> -->  
-
-    <!-----------------------------------------------------------------------------------Research Experiences-------------------------------------->
-    <div id="Experiences" class="tabContent" style="font-family: Calibri, 'Trebuchet MS', sans-serif, 'Gill Sans MT', 'Gill Sans';">        
-
-      <table border="0" cellpadding="0" cellspacing="4">
-        <tr>
-          <td valign="top"><img width=90px, border=0 src="images/reviewer.PNG"> &nbsp;</td>
-          <td>
-            <b><u style="color: cornflowerblue;">Reviewer</u></b>
-            <br><b><a href="https://cvpr2023.thecvf.com/"><i>CVPR 2023</i></a>, <a href="https://cvpr2022.thecvf.com/"><i>CVPR 2022</i></a>, <a href="http://sketchx.ai/"><i>ICCV 2021</i></a>, <a href="https://pg2021.org/"><i>PG 2021</i></a></b>
-            <br><b><a href="https://cis.ieee.org/publications/t-neural-networks-and-learning-systems"><i>TNNLS</i></a>, <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34"><i>TPAMI</i></a>, <a href="https://aij.ijcai.org/"><i>Artificial Intelligence</i></a>, <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=93"><i>IEEE Multimedia </i></a></b>
-          </td>
-        </tr>
-        <tr><td>&nbsp;</td></tr>
-
-        <tr>
-          <td valign="top"><a href="https://www.surrey.ac.uk/people/aneeshan-sain" target="_blank"><img width=90 border=0 src="images/isize.PNG"></a> &nbsp;</td>
-          <td>
-            <b><u style="color: cornflowerblue;">Research Scientist</u></b>
-            <br><b><a href="https://www.isize.co/">iSIZE Technologies</a></b>, London, UK
-            <br>July 2022 - Present
-          </td>
-        </tr>
-        <tr><td>&nbsp;</td></tr>
-        
-        <tr>
-          <td valign="top"><a href="https://www.surrey.ac.uk/people/aneeshan-sain" target="_blank"><img width=90 border=0 src="images/Surrey.png"></a> &nbsp;</td>
-          <td>
-            <b><u style="color: cornflowerblue;">PhD Student</u></b>
-            <br><b><a href="http://sketchx.ai/">SketchX Lab</a></b>, CVSSP, University of Surrey, UK
-            <br>Under <em><a href="https://www.surrey.ac.uk/people/yi-zhe-song" >Prof. Yi-Zhe Song</a></em>
-            <br>Oct 2019 - Present
-          </td>
-        </tr>
-        <tr><td>&nbsp;</td></tr>
-
-        <tr>
-          <td valign="top"><a href="https://www.isical.ac.in/" target="_blank"><img width=90 border=0 src="images/ISI.PNG"></a> &nbsp;</td>
-          <td>
-            <b><u style="font-family: Calibri, 'Trebuchet MS', sans-serif, 'Gill Sans MT', 'Gill Sans'; color: cornflowerblue;">Research Intern</u></b>
-            <br>Indian Statistical Institute (<b>ISI</b>), Kolkata, India
-            <br>Under <em><a href="https://www.isical.ac.in/~umapada/" target="_blank">Prof. Umapada Pal</a></em>
-                & <em>Dr. Partha Pratim Roy</em>
-            <br>Feb 2016 - Dec 2017
-          </td> 
-        </tr>
-        <tr><td>&nbsp;</td></tr>
-
-        <tr>
-          <td valign="top"><a href="https://www.iitr.ac.in/" target="_blank"><img width=90 border=0 src="images/iitr.png"></a> &nbsp;</td>
-          <td>
-            <b><u style="font-family: Calibri, 'Trebuchet MS', sans-serif, 'Gill Sans MT', 'Gill Sans'; color: cornflowerblue;">Undergraduate Student Researcher</u></b>
-            <br>Indian Institute of Technology Roorkee (<b>IITR</b>), India
-            <br>Under <em><a href="http://parimal.iitr.ac.in/people/partha-pratim-roy" target="_blank">Dr. Partha Pratim Roy</a></em>
-            <br>Dec 2015 - Jan 2016
-          </td>
-        </tr>
-        <tr><td>&nbsp;</td></tr>
-        
-      </table>
-    </div>
-
-    <!--------------------------------------------------------------------------------------------Publications-------------------------------------->
-    <div id="Publications" class="tabContent" style="font-family: Calibri, 'Trebuchet MS', sans-serif, 'Gill Sans MT', 'Gill Sans';"><center>
-      <!-----------------------------------------------------------------------------------Buttons-------------------------------------->
-      <button class="tabLink subTabLink" onclick="openYearTab('Year_2023', this, '#9AB95F', '#007bb5')" id="Publications_defaultSub" ><b>2023</b></button>
-      <button class="tabLink subTabLink" onclick="openYearTab('Year_2022', this, '#9AB95F', '#007bb5')"><b>2022</b></button>
-      <button class="tabLink subTabLink" onclick="openYearTab('Year_2021', this, '#9AB95F', '#007bb5')"><b>2021</b></button>
-      <button class="tabLink subTabLink" onclick="openYearTab('Year_2020', this, '#9AB95F', '#007bb5')"><b>2020</b></button>
-      <button class="tabLink subTabLink" onclick="openYearTab('Year_2019', this, '#9AB95F', '#007bb5')"><b>2019</b></button>
-      <button class="tabLink subTabLink" onclick="openYearTab('Year_2018', this, '#9AB95F', '#007bb5')"><b>2018</b></button>
-
-      <div id="Year_2023" class="tabContent subTabContent">
-        <table border="0" cellpadding="10" cellspacing="1"  align="center" bgcolor="#FFFFFF">
-
-          <!-- CLIP -->
-          <tr>              
-            <td >
-              <img border=0 src="images/CVPR_2023/CLIP.png" class="publogo">
-            </td>
-            <td class="publication">
-              <b style="color:#65696C;">CLIP for All Things Zero-Shot Sketch-Based Image Retrieval, Fine-Grained or Not</b>
-              <br> <b>Aneeshan Sain</b>, Ayan Kumar Bhunia , Pinaki Nath Chowdhury, Subhadeep Koley, Tao Xiang , Yi-Zhe Song.
-              <br><b style="font-size: 18px;"><em> Computer Vision and Pattern Recognition (CVPR), </em> 2023.</b>
-              <br> <button><a href="https://arxiv.org/pdf/2203.02113.pdf">Paper</a></button>
-              <!-- <button><a href="https://www.youtube.com/watch?v=ggVMOncI71o">Talk</a></button>
-              <button><a href="https://aneeshan95.github.io/Sketch3T/">More</a></button>  -->
-            </td>
-          </tr>
-          
-          <!-- Photorealism -->
-          <tr>              
-            <td >
-              <img border=0 src="images/CVPR_2023/Photorealism.png" class="publogo">
-            </td>
-            <td class="publication">
-              <b style="color:#65696C;">Picture that Sketch: Photorealistic Image Generation from Abstract Sketches</b>
-              <br> Subhadeep Koley, Ayan Kumar Bhunia, <b>Aneeshan Sain</b>, Pinaki Nath Chowdhury, Tao Xiang , Yi-Zhe Song .
-              <br><b style="font-size: 18px;"><em> Computer Vision and Pattern Recognition (CVPR), </em> 2023.</b>
-              <br> <button><a href="https://arxiv.org/pdf/2207.01723.pdf">Paper</a></button>
-              <!-- <button><a href="https://www.youtube.com/watch?v=ggVMOncI71o">Talk</a></button>
-              <button><a href="https://aneeshan95.github.io/Sketch3T/">More</a></button>  -->
-            </td>
-          </tr>
-          
-          <!-- OD -->
-          <tr>              
-            <td >
-              <img border=0 src="images/CVPR_2023/OD.png" class="publogo">
-            </td>
-            <td class="publication">
-              <b style="color:#65696C;">What Can Human Sketches Do for Object Detection?</b>
-              <br> Pinaki Nath Chowdhury, Ayan Kumar Bhunia, <b>Aneeshan Sain</b>, Subhadeep Koley, Tao Xiang , Yi-Zhe Song.
-              <br><b style="font-size: 18px;"><em> Computer Vision and Pattern Recognition (CVPR), </em> 2023.</b>
-              <br> <button><a href="https://arxiv.org/pdf/2203.14691/pdf">Paper</a></button>
-              <button><a href="https://www.youtube.com/watch?v=ggVMOncI71o">Talk</a></button>
-              <button><a href="https://aneeshan95.github.io/Sketch3T/">More</a></button> 
-            </td>
-          </tr>
-
-          <!-- Scenetrilogy -->
-          <tr>              
-            <td >
-              <img border=0 src="images/CVPR_2023/Scenetrilogy.png" class="publogo">
-            </td>
-            <td class="publication">
-              <b style="color:#65696C;">SceneTrilogy: On Human Scene-Sketch and its Complementarity with Photo and Text</b>
-              <br> Pinaki Nath Chowdhury, Ayan Kumar Bhunia, <b>Aneeshan Sain</b>, Subhadeep Koley, Tao Xiang , Yi-Zhe Song.
-              <br><b style="font-size: 18px;"><em> Computer Vision and Pattern Recognition (CVPR), </em> 2023.</b>
-              <br> <button><a href="https://arxiv.org/pdf/2203.14804/pdf">Paper</a></button>
-              <button><a href="https://www.youtube.com/watch?v=Go7ldu-NCa0">Talk</a></button>
-              <!-- <button><a href="https://aneeshan95.github.io/StyleMeUp/">More</a></button>  -->
-            </td>
-          </tr>
-
-          <!-- Saliency -->
-          <tr>              
-            <td >
-              <img border=0 src="images/CVPR_2023/Saliency.png" class="publogo">
-            </td>
-            <td class="publication">
-              <b style="color:#65696C;">Sketch2Saliency: Learning to Detect Salient Objects from Human Drawings</b>
-              <br> Ayan Kumar Bhunia, Subhadeep Koley, Amandeep Kumar, <b>Aneeshan Sain</b>, Pinaki Nath Chowdhury, Tao Xiang , Yi-Zhe Song.
-              <br><b style="font-size: 18px;"><em> Computer Vision and Pattern Recognition (CVPR), </em> 2023.</b>
-              <br> 
-              <button><a href="https://arxiv.org/pdf/2203.14843/pdf">Paper</a></button>
-              <button><a href="https://github.com/AyanKumarBhunia/DIY-FSCIL">Code</a></button>
-              <button><a href="https://www.youtube.com/watch?v=-djXb4LL2KU">Talk</a></button>
-              <button><a href="https://ayankumarbhunia.github.io/DIY-FSCIL/">More</a></button> 
-            </td>
-          </tr>
-
-          <!-- Transformer -->
-          <tr>              
-            <td >
-              <img border=0 src="images/CVPR_2023/Transformer.png" class="publogo">
-            </td>
-            <td class="publication">
-              <b style="color:#65696C;">Exploiting Unlabelled Photos for Stronger Fine-Grained SBIR</b>
-              <br> <b>Aneeshan Sain</b>, Ayan Kumar Bhunia, Subhadeep Koley, Pinaki Nath Chowdhury, Tao Xiang , Yi-Zhe Song.
-              <br><b style="font-size: 18px;"><em> Computer Vision and Pattern Recognition (CVPR), </em> 2023.</b>
-              <br> 
-              <button><a href="https://arxiv.org/pdf/2203.14817/pdf">Paper</a></button>
-              <button><a href="https://github.com/AyanKumarBhunia/Stroke_Subset_Selector-for-FGSBIR">Code</a></button>
-              <button><a href="https://www.youtube.com/watch?v=WOdO6Tjha0Q">Talk</a></button>
-              <button><a href="https://ayankumarbhunia.github.io/NoiseTolerant-SBIR/">More</a></button> 
-            </td>
-          </tr>
-        </table>
+   <head>
+      <style>
+         td, th {
+         border: 0px solid black;
+         }
+         img{
+         padding: 5px;
+         }
+      </style>
+      <title>CLIP for All Things Zero-Shot Sketch-Based Image Retrieval, Fine-Grained or Not</title>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <!--  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+         <script>
+           window.dataLayer = window.dataLayer || [];
+         
+           function gtag() {
+             dataLayer.push(arguments);
+           }
+         
+           gtag('js', new Date());
+         
+           gtag('config', 'G-PYVRSFMDRL');
+         
+         
+         
+         </script> -->
+      <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+         rel="stylesheet">
+      <link rel="stylesheet" href="./static/css/bulma.min.css">
+      <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+      <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+      <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+      <link rel="stylesheet"
+         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+      <link rel="stylesheet" href="./static/css/index.css">
+      <link rel="icon" href="./static/images/favicon.svg">
+      <link rel="stylesheet" href="https://unpkg.com/image-compare-viewer/dist/image-compare-viewer.min.css">
+      <link rel="stylesheet" href="css/app.css">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <script src="https://unpkg.com/image-compare-viewer/dist/image-compare-viewer.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script defer src="./static/js/fontawesome.all.min.js"></script>
+      <script src="./static/js/bulma-carousel.min.js"></script>
+      <script src="./static/js/bulma-slider.min.js"></script>
+      <script src="./static/js/index.js"></script>
+   </head>
+   <!-- <body>
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div class="navbar-menu">
+          <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+            <a class="navbar-item" href="https://keunhong.com">
+            <span class="icon">
+                <i class="fas fa-home"></i>
+            </span>
+            </a>
+      
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                More Research
+              </a>
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="https://hypernerf.github.io">
+                  HyperNeRF
+                </a>
+                <a class="navbar-item" href="https://nerfies.github.io">
+                  Nerfies
+                </a>
+                <a class="navbar-item" href="https://latentfusion.github.io">
+                  LatentFusion
+                </a>
+                <a class="navbar-item" href="https://photoshape.github.io">
+                  PhotoShape
+                </a>
+              </div>
+            </div>
+          </div>
+      
+        </div>
+      </nav> -->
+   <section class="hero">
+      <div class="hero-body">
+         <div class="container is-max-desktop">
+            <div class="columns is-centered">
+               <div class="column has-text-centered">
+                  <h1 class="title is-1 publication-title", style="color:purple;">CLIP for All Things Zero-Shot Sketch-Based Image Retrieval</h1>
+                  <h1 class="title is-4 publication-title">Fine-Grained or Not</h1>
+                  <div class="is-size-5 publication-authors">
+                     <span class="author-block">
+                     <a href="https://aneeshan95.github.io/">Aneeshan Sain</a><sup>1,2</sup>,</span>
+                     <span class="author-block">
+                     <a href="https://ayankumarbhunia.github.io/">Ayan Kumar Bhunia</a><sup>1</sup>,</span>
+                     <span class="author-block">
+                     <a href="http://www.pinakinathc.me/">Pinaki Nath Chowdhury</a><sup>1,2</sup>,</span>
+                     <span class="author-block">
+                     <a href="https://subhadeepkoley.github.io/">Subhadeep Koley</a><sup>1,2</sup>,</span>
+                     <span class="author-block">
+                     <br>
+                     <a href="http://personal.ee.surrey.ac.uk/Personal/T.Xiang/index.html">Tao Xiang</a><sup>1,2</sup>,</span>
+                     <span class="author-block">
+                     <a href="http://personal.ee.surrey.ac.uk/Personal/Y.Song/">Yi-Zhe Song</a><sup>1,2</sup></span>	  
+                     </span>
+                  </div>
+                  <div class="is-size-5 publication-authors">
+                     <span class="author-block"><sup>1</sup>SketchX, CVSSP, University of Surrey, United Kingdom</span>
+                     <span class="author-block"><sup>2</sup>iFlyTek-Surrey Joint Research Centre on Artifiial Intelligence</span>
+                  </div>
+                  <!--     <div class="column has-text-centered">
+                     <a href="as">ICLR 2023</a>
+                     </span>
+                     </div> -->
+                  <div class="column has-text-centered">
+                     <div class="publication-links">
+                        <!-- PDF Link. -->
+                        <span class="link-block">
+                        <a href="https://arxiv.org/pdf/2303.13440.pdf"
+                           class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                        </a>
+                        </span>
+                        <span class="link-block">
+                        <a href="https://arxiv.org/abs/2303.13440"
+                           class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                        </span>
+                        <span>arXiv</span>
+                        </a>
+                        </span>
+                        <!-- Video Link. -->
+                        <span class="link-block">
+                        <a href=""
+                           class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                        <i class="fab fa-youtube"></i>
+                        </span>
+                        <span>Video</span>
+                        </a>
+                        </span>
+                        <!-- Code Link. -->
+                        <span class="link-block">
+                        <a href="https://aneeshan95.github.io/Sketch_LVM/"
+                           class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                        <i class="fab fa-github"></i>
+                        </span>
+                        <span>Code</span>
+                        </a>
+                        </span>
+                        <!-- Dataset Link. -->
+                        <!-- <span class="link-block">
+                           <a href=""
+                              class="external-link button is-normal is-rounded is-dark">
+                             <span class="icon">
+                                 <i class="far fa-images"></i>
+                             </span>
+                             <span>Data</span>
+                           </a> -->
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
       </div>
-
-      <div id="Year_2022" class="tabContent subTabContent">
-        <table border="0" cellpadding="10" cellspacing="1"  align="center" bgcolor="#FFFFFF">
-
-          <!-- FS-COCO -->
-          <tr>              
-            <td >
-              <img border=0 src="images/ECCV_2022/FS_COCO.PNG" class="publogo">
-            </td>
-            <td class="publication">
-              <b style="color:#65696C;">FS-COCO: Towards Understanding of Freehand Sketches of Common Objects in Context</b>
-              <br> Pinaki Nath Chowdhury, <b>Aneeshan Sain</b>, Ayan Kumar Bhunia, Tao Xiang, Yulia Gryaditskaya, Yi-Zhe Song.
-              <br><b style="font-size: 18px;"><em> European Conference on Computer Vision (ECCV), </em> 2022.</b>
-              <br> <button><a href="https://arxiv.org/pdf/2203.02113.pdf">Paper</a></button>
-              <!-- <button><a href="https://www.youtube.com/watch?v=ggVMOncI71o">Talk</a></button>
-              <button><a href="https://aneeshan95.github.io/Sketch3T/">More</a></button>  -->
-            </td>
-          </tr>
-          
-          <!-- Adaptive FGSBIR -->
-          <tr>              
-            <td >
-              <img border=0 src="images/ECCV_2022/Adaptive.PNG" class="publogo">
-            </td>
-            <td class="publication">
-              <b style="color:#65696C;">Adaptive Fine-Grained Sketch-Based Image Retrieval</b>
-              <br> Ayan Kumar Bhunia, <b>Aneeshan Sain</b>, Parth Shah, Animesh Gupta, Pinaki Nath Chowdhury, Tao Xiang, Yi-Zhe Song.
-              <br><b style="font-size: 18px;"><em> European Conference on Computer Vision (ECCV), </em> 2022.</b>
-              <br> <button><a href="https://arxiv.org/pdf/2207.01723.pdf">Paper</a></button>
-              <!-- <button><a href="https://www.youtube.com/watch?v=ggVMOncI71o">Talk</a></button>
-              <button><a href="https://aneeshan95.github.io/Sketch3T/">More</a></button>  -->
-            </td>
-          </tr>
-          
-          <!-- Sketch3T -->
-          <tr>              
-            <td >
-              <img border=0 src="images/CVPR_2022/Sketch3T.PNG" class="publogo">
-            </td>
-            <td class="publication">
-              <b style="color:#65696C;">Sketch3T: Test-time Training for Zero-Shot SBIR</b>
-              <br> <b>Aneeshan Sain</b>, Ayan Kumar Bhunia, Vaishnav Potlapalli, Pinaki Nath Chowdhury, Tao Xiang, Yi-Zhe Song.
-              <br><b style="font-size: 18px;"><em> Computer Vision and Pattern Recognition (CVPR), </em> 2022.</b>
-              <br> <button><a href="https://arxiv.org/pdf/2203.14691/pdf">Paper</a></button>
-              <button><a href="https://www.youtube.com/watch?v=ggVMOncI71o">Talk</a></button>
-              <button><a href="https://aneeshan95.github.io/Sketch3T/">More</a></button> 
-            </td>
-          </tr>
-
-          <!-- Partially Does It -->
-          <tr>              
-            <td >
-              <img border=0 src="images/CVPR_2022/Partially.PNG" class="publogo">
-            </td>
-            <td class="publication">
-              <b style="color:#65696C;">Partially Does It: Towards Scene-Level FG-SBIR with Partial Input</b>
-              <br> Pinaki Nath Chowdhury, Ayan Kumar Bhunia, Viswanatha Reddy Gajjala, <b>Aneeshan Sain</b>,  Tao Xiang, Yi-Zhe Song.
-              <br><b style="font-size: 18px;"><em> Computer Vision and Pattern Recognition (CVPR), </em> 2022.</b>
-              <br> <button><a href="https://arxiv.org/pdf/2203.14804/pdf">Paper</a></button>
-              <button><a href="https://www.youtube.com/watch?v=Go7ldu-NCa0">Talk</a></button>
-              <!-- <button><a href="https://aneeshan95.github.io/StyleMeUp/">More</a></button>  -->
-            </td>
-          </tr>
-
-          <!-- Doodle It Yourself -->
-          <tr>              
-            <td >
-              <img border=0 src="images/CVPR_2022/Doodle.PNG" class="publogo">
-            </td>
-            <td class="publication">
-              <b style="color:#65696C;">Doodle It Yourself: Class Incremental Learning by Drawing a Few Sketches</b>
-              <br> Ayan Kumar Bhunia, Viswanatha Reddy Gajjala, Subhadeep Koley, Rohit Kundu, <b>Aneeshan Sain</b>, Tao Xiang, Yi-Zhe Song.
-              <br><b style="font-size: 18px;"><em> Computer Vision and Pattern Recognition (CVPR), </em> 2022.</b>
-              <br> 
-              <button><a href="https://arxiv.org/pdf/2203.14843/pdf">Paper</a></button>
-              <button><a href="https://github.com/AyanKumarBhunia/DIY-FSCIL">Code</a></button>
-              <button><a href="https://www.youtube.com/watch?v=-djXb4LL2KU">Talk</a></button>
-              <button><a href="https://ayankumarbhunia.github.io/DIY-FSCIL/">More</a></button> 
-            </td>
-          </tr>
-
-          <!-- Stroke-subset -->
-          <tr>              
-            <td >
-              <img border=0 src="images/CVPR_2022/Subset.PNG" class="publogo">
-            </td>
-            <td class="publication">
-              <b style="color:#65696C;">Sketching without Worrying: Noise-Tolerant SBIR</b>
-              <br> Ayan Kumar Bhunia, Subhadeep Koley, Abdullah Faiz Ur Rahman Khilji, <b>Aneeshan Sain</b>, Pinaki Nath Chowdhury, Tao Xiang, Yi-Zhe Song.
-              <br><b style="font-size: 18px;"><em> Computer Vision and Pattern Recognition (CVPR), </em> 2022.</b>
-              <br> 
-              <button><a href="https://arxiv.org/pdf/2203.14817/pdf">Paper</a></button>
-              <button><a href="https://github.com/AyanKumarBhunia/Stroke_Subset_Selector-for-FGSBIR">Code</a></button>
-              <button><a href="https://www.youtube.com/watch?v=WOdO6Tjha0Q">Talk</a></button>
-              <button><a href="https://ayankumarbhunia.github.io/NoiseTolerant-SBIR/">More</a></button> 
-            </td>
-          </tr>
-
-          <!-- FS-COCO
-          <tr>              
-            <td >
-              <img border=0 src="images/FS_COCO.PNG" class="publogo">
-            </td>
-            <td class="publication">
-              <b style="color:#65696C;">FS-COCO: Towards Understanding Freehand Sketches of Common Objects in Context</b>
-              <br> Pinaki Nath Chowdhury, <b>Aneeshan Sain</b>, Yulia Gryaditskaya, Ayan Kumar Bhunia, Tao Xiang, Yi-Zhe Song.
-              <br><b style="font-size: 18px;"><em> arXiv Preprint, </em> 2022.</b>
-              <br> <button><a href="https://arxiv.org/pdf/2203.02113.pdf">Paper</a></button>
-              <button><a href="https://www.pinakinathc.me/fscoco">Dataset</a></button>
-              <button><a href="https://www.youtube.com/watch?v=tYdy9frVRJI">Talk</a></button>   arXiv:2203.02113
-            </td>
-          </tr> -->
-
-        </table>
+   </section>
+   <section class="hero teaser">
+      <div class="container is-max-desktop">
+         <div class="hero-body">
+            <img class="round" style="width:1500px" src="./static/images/teaser.png"/>
+            <h2 class="subtitle has-text-centered">
+               <span class="dnerf"></span> Against existing (left) ZS-SBIR methods, we adapt CLIP model for ZS-SBIR (middle), and extend to a more practical yet challenging setup of FG-ZS-SBIR (right), via a novel promptbased design. Our model surpasses prior arts by a high margin.</h2>
+         </div>
       </div>
-
-      <div id="Year_2021" class="tabContent subTabContent">
-        <table border="0" cellpadding="10" cellspacing="1"  align="center" bgcolor="#FFFFFF">
-
-          <!-- TextisText -->
-          <tr>              
-            <td >
-              <img border=0 src="images/ICCV_2021/TextisText.PNG" class="publogo">
-            </td>
-            <td class="publication">
-              <b style="color:#65696C;">Text is Text, No Matter What: Unifying Text Recognition using Knowledge Distillation</b>
-              <br> Ayan Kumar Bhunia, <b>Aneeshan Sain</b>, Pinaki Nath Chowdhury, Yi-Zhe Song.
-              <br><b style="font-size: 18px;"><em>International Conference on Computer Vision (ICCV), </em> 2021.</b>
-              <br> <button><a href="https://openaccess.thecvf.com/content/ICCV2021/html/Bhunia_Text_Is_Text_No_Matter_What_Unifying_Text_Recognition_Using_ICCV_2021_paper.html">Paper</a></button>
-              <!-- <button><a href="https://www.youtube.com/watch?v=tYdy9frVRJI">Talk</a></button>
-              <button><a href="https://aneeshan95.github.io/StyleMeUp/">More</a></button>  -->
-            </td>
-          </tr>
-
-          <!-- Towards the Unseen -->
-          <tr>
-                    
-            <td >
-              <img border=0 src="images/ICCV_2021/Unseen.PNG" class="publogo">
-            </td>
-            <td class="publication">
-              <b style="color:#65696C;">Towards the Unseen: Iterative Text Recognition by Distilling from Errors</b>
-              <br> Ayan Kumar Bhunia, Pinaki Nath Chowdhury, <b>Aneeshan Sain</b>, Yi-Zhe Song.
-              <br> <b style="font-size: 18px;"><em>International Conference on Computer Vision (ICCV), </em> 2021.</b>
-              <br> <button><a href="https://openaccess.thecvf.com/content/ICCV2021/html/Bhunia_Towards_the_Unseen_Iterative_Text_Recognition_by_Distilling_From_Errors_ICCV_2021_paper.html">Paper</a></button>
-              <!-- <button><a href="https://www.youtube.com/watch?v=tYdy9frVRJI">Talk</a></button>
-              <button><a href="https://aneeshan95.github.io/StyleMeUp/">More</a></button>  -->
-
-            </td>
-          </tr>
-
-          <!-- JVSR -->
-          <tr>                
-            <td >
-              <img border=0 src="images/ICCV_2021/JVSR.PNG" class="publogo">
-            </td>
-            <td class="publication">
-              <b style="color:#65696C;">Joint Visual Semantic Reasoning: Multi-Stage Decoder for Text Recognition</b>
-              <br> Ayan Kumar Bhunia, <b>Aneeshan Sain</b>, Amandeep Kumar, Shuvozit Ghose, Pinaki Nath Chowdhury, Yi-Zhe Song.
-              <br> <b style="font-size: 18px;"><em>International Conference on Computer Vision (ICCV), </em> 2021.</b>
-              <br> <button><a href="https://openaccess.thecvf.com/content/ICCV2021/html/Bhunia_Joint_Visual_Semantic_Reasoning_Multi-Stage_Decoder_for_Text_Recognition_ICCV_2021_paper.html">Paper</a></button>
-              <!-- <a href="https://www.youtube.com/watch?v=tYdy9frVRJI">Talk</a></button>
-              <a href="https://aneeshan95.github.io/StyleMeUp/">More</a></button>  -->
-
-            </td>
-          </tr>
-            
-          <!-- StyleMeUp -->
-          <tr>                
-            <td >
-              <img border=0 src="images/CVPR_2021/StyleMeUp.PNG" class="publogo">
-            </td>
-            <td class="publication">
-              <b style="color:#65696C;">StyleMeUp: Towards Style-Agnostic Sketch-Based Image Retrieval</b>
-              <br> <b>Aneeshan Sain</b>, Ayan Kumar Bhunia, Yongxin Yang, Tao Xiang, Yi-Zhe Song.
-              <br> <b style="font-size: 18px;"><em> Computer Vision and Pattern Recognition (CVPR), </em> 2021.</b>
-              <br> <button><a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Sain_StyleMeUp_Towards_Style-Agnostic_Sketch-Based_Image_Retrieval_CVPR_2021_paper.pdf">Paper</a></button>
-              <button><a href="https://www.youtube.com/watch?v=tYdy9frVRJI">Talk</a></button>
-              <button><a href="https://aneeshan95.github.io/StyleMeUp/">More</a></button>
-            </td>
-          </tr>
-            
-          <!-- PQA -->
-          <tr>                
-            <td >
-              <img border=0 src="images/CVPR_2021/PQA.PNG" class="publogo">
-            </td>
-            <td class="publication">
-              <b style="color:#65696C;">PQA: Perceptual Question Answering</b>
-              <br> Yonggang Qi, Kai Zhang, <b>Aneeshan Sain</b>, Yi-Zhe Song.
-              <br><b style="font-size: 18px;"><em> Computer Vision and Pattern Recognition (CVPR), </em> 2021.</b>
-              <br> <button><a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Qi_PQA_Perceptual_Question_Answering_CVPR_2021_paper.pdf">Paper</a></button>
-            </td>
-          </tr>
-            
-          <!-- Semi-supervised Sketch -->
-          <tr>                
-            <td >
-              <img border=0 src="images/CVPR_2021/Semi-sup.PNG" class="publogo">
-            </td>
-            <td class="publication">
-              <b style="color:#65696C;">More Photos are All You Need: Semi-Supervised Learning for Fine-Grained Sketch Based Image Retrieval</b>
-              <br> Ayan Kumar Bhunia, Pinaki Nath Chowdhury, <b>Aneeshan Sain</b>, Yongxin Yang, Tao Xiang, Yi-Zhe Song.
-              <br><b style="font-size: 18px;"><em> Computer Vision and Pattern Recognition (CVPR), </em> 2021.</b>
-              <br> <button><a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Bhunia_More_Photos_Are_All_You_Need_Semi-Supervised_Learning_for_Fine-Grained_CVPR_2021_paper.pdf">Paper</a></button>
-              <button><a href="https://github.com/AyanKumarBhunia/semisupervised-FGSBIR/">Code</a></button>
-            </td>
-          </tr>
-
-          <!-- MetaHTR -->
-          <tr>    
-            <td >
-              <img border=0 src="images/CVPR_2021/MetaHTR.PNG" class="publogo">
-            </td>
-            <td class="publication">
-              <b style="color:#65696C;">MetaHTR: Towards Writer-Adaptive Handwritten Text Recognition</b>
-              <br> Ayan Kumar Bhunia, Shuvozit Ghose, Amandeep Kumar, Pinaki Nath Chowdhury, <b>Aneeshan Sain</b>, Yi-Zhe Song.
-              <br><b style="font-size: 18px;"><em> Computer Vision and Pattern Recognition (CVPR), </em> 2021.</b>
-              <br> <button><a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Bhunia_MetaHTR_Towards_Writer-Adaptive_Handwritten_Text_Recognition_CVPR_2021_paper.pdf">Paper</a></button>
-            </td>
-          </tr>
-        </table>
-      </div>
-        
-      <div id="Year_2020" class="tabContent subTabContent">
-        <table border="0" cellpadding="10" cellspacing="1"  align="center" bgcolor="#FFFFFF">
-          <!-- BMVC Hierarchy -->
-          <tr>   
-            <td >
-              <img border=0 src="images/bmvc.png" class="publogo">
-            </td>
-            <td class="publication">
-              <b style="color:#65696C;">Cross-Modal Hierarchical Modelling for Fine-Grained Sketch Based Image Retrieval</b>
-              <br> <b>Aneeshan Sain</b>, Ayan Kumar Bhunia,  Yongxin Yang, Tao Xiang, Yi-Zhe Song.
-              <br><b style="font-size: 18px;"><em> British Machine Vision Conference (BMVC), </em> 2020. <font color="green">[Oral]</font> </b>
-              <br> <button><a href="https://www.bmvc2020-conference.com/assets/papers/0102.pdf">Paper</a></button>
-              <button><a href="https://www.youtube.com/watch?v=hfnTbSY7QZo">Talk</a></button>
-              <button><a href="https://aneeshan95.github.io/Cross-modal_Hierarchy_FGSBIR/">More</a></button>
-            </td>
-          </tr>
-          
-          <!-- ICME S3Net-->
-          <tr>
-            <td>
-              <img border=0 src="images/icme.png" class="publogo">
-            </td>
-            <td class="publication">
-              <b style="color:#65696C;">S3Net:Graph Representational Network For Sketch Recognition</b>
-              <br> Lan Yang, <b>Aneeshan Sain</b>, Linpeng Li, Yonggang Qi, Honggang Zhang, Yi-Zhe Song.
-              <br><b style="font-size: 18px;"><em> International Conference on Multimedia & Expo (ICME )</em>, 2020. </b>
-              <br> <button><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9102957">Paper</a></button>
-              <button><a href="https://github.com/yanglan0225/s3net">Code</a></button>
-            </td>
-          </tr>
-          
-          <!-- Multi-media Tools Zone -->
-          <tr>
-              <td>
-              <img border=0 src="images/multi-tools.png" class="publogo">
-              </td>
-              <td class="publication">
-                <b style="color:#65696C;">Zone-based keyword spotting in Bangla and Devanagari documents</b>
-                <br> Ayan Kumar Bhunia, Partha Pratim Roy, <b>Aneeshan Sain</b>, Umapada Pal.
-                <br><b style="font-size: 18px;"><em> Multimedia Tools and Applications, Springer US</em>, 2020. </b>
-                <br> <button><a href="https://link.springer.com/content/pdf/10.1007/s11042-019-08442-y.pdf">Paper</a></button>  
-              </td>
-            </tr>
-          </table>
-      </div>
-
-      <div id="Year_2019" class="tabContent subTabContent">
-        <table border="0" cellpadding="10" cellspacing="1"  align="center" bgcolor="#FFFFFF">
-
-          <!-- ICIP Document Binarization -->
-          <tr>
-            <td>
-              <img border=0 src="images/im2.png" class="publogo">
-            </td>
-            <td class="publication">
-              <b style="color:#65696C;">Improving Document Binarization via Adversarial Noise-Texture Augmentation</b>
-              <br> Ankan Kumar Bhunia, Ayan Kumar Bhunia, <b>Aneeshan Sain</b>, Partha Pratim Roy.
-              <br> <b style="font-size: 18px;"><em>International Conference on Image Processing (ICIP), IEEE</em> 2019. </b>
-              <br> <button><a href="https://arxiv.org/abs/1810.11120.pdf">Paper</a></button> 
-              <button><a href="https://github.com/ankanbhunia/AdverseBiNet">Code</a></button>
-            </td>
-          </tr>
-          
-          <!-- CSVT Background Subtraction -->
-          <tr>
-            <td>
-              <img border=0 src="images/csvt.png" class="publogo">
-            </td>
-            <td class="publication">
-              <b style="color:#65696C;">Background Subtraction Based on Integration of Alternative Cues in Freely Moving Camera</b>
-              <br> Chenqiu Zhao, <b>Aneeshan Sain</b>, Ying Qu, Yongxin Ge, Haibo Hu.
-              <br><b style="font-size: 18px;"><em>IEEE Transactions on Circuits and Systems for Video Technology (CSVT)</em>, 2019. <font color="blue">[I.F. : 3.599]</b></font>
-              <br> <button><a href="https://ieeexplore.ieee.org/document/8408818">Paper</a></button>
-            </td>
-          </tr>
-        </table>  
-      </div>
-
-      <div id="Year_2018" class="tabContent subTabContent">
-        <table border="0" cellpadding="10" cellspacing="1"  align="center" bgcolor="#FFFFFF">
-
-          <!-- Info Fusion Indic Handwritten-->
-          <tr>
-            <td>
-              <img border=0 src="images/indic.png" class="publogo">
-            </td>
-            <td class="publication">
-              <b style="color:#65696C;">Indic Handwritten Script Identification using Offline-Online Multimodal Deep Network</b>
-              <br> Ayan Kumar Bhunia, Subham Mukherjee, <b>Aneeshan Sain</b>, Ankan Kumar Bhunia, Partha Pratim Roy, Umapada Pal.
-              <br><b style="font-size: 18px;"><em>Information Fusion, Elsevier</em>, 2018. <font color="blue">[I.F. : 10.716]</font></b>
-              <br> <button><a href="https://arxiv.org/abs/1802.08568.pdf">Paper</a></button>
-            </td>
-          </tr>
-
-          <!-- Neurocomputing Multi-Oriented -->
-          <tr>
-            <td>
-              <img border=0 src="images/neuro.png" class="publogo">
-            </td>
-            <td class="publication">
-              <b style="color:#65696C;"> Multi-Oriented Text Detection and Verification in Video Frames and Scene Images</b>
-              <br><b> Aneeshan Sain</b>, Ayan Kumar Bhunia, Partha Pratim Roy, Umapada Pal.
-              <br><b style="font-size: 18px;"><em>Neurocomputing, Elsevier</em>, 2018. <font color="blue">[I.F. : 3.317]</b></font>
-              <br> <button><a href="https://www.sciencedirect.com/science/article/pii/S0925231217316181">Paper</a></button> 
-
-            </td>
-          </tr>
-        </table>
-      </div>  
-      <!-- Selected Research section ends here-->
-      </script>
-    </center></div>
-
-    <!-- <div id='Resume' class='tabContent'><center>
-      <embed width="100%" height = "100%" type="application/pdf" src="Resume/Current_CV.pdf" />
-    </center></div> -->
-    <!------------------------------------------------------------------------ Credits -------------------------------------------------------->
-    <p style="font-size:15px" align="center"><a href="https://iconscout.com/icons/dblp" target="_blank">Dblp Flat Icon</a> by <a href="https://iconscout.com/contributors/icon-54">Icon 54</a> on <a href="https://iconscout.com">Iconscout</a></p> 
-  </center>
-
-  <script>
-    function openYearTab(pageName,elmnt,color, fontcolor) {
-          var i, tabContent, tabLinks;
-          tabContent = document.getElementsByClassName("tabContent subTabContent");
-          for (i = 0; i < tabContent.length; i++) {
-            tabContent[i].style.display = "none";
-          }
-          tabLinks = document.getElementsByClassName("tabLink subTabLink");
-          for (i = 0; i < tabLinks.length; i++) {
-            tabLinks[i].style.backgroundColor = "";
-            tabLinks[i].style.color = "";
-          }
-          document.getElementById(pageName).style.display = "block";
-          elmnt.style.backgroundColor = color;
-          elmnt.style.color = fontcolor;
-        }
-
-    function openPage(pageName,elmnt,color, fontcolor) {
-      var i, tabContent, tabLinks;
-      tabContent = document.getElementsByClassName("tabContent");
-      for (i = 0; i < tabContent.length; i++) {
-        tabContent[i].style.display = "none";
-      }
-      tabLinks = document.getElementsByClassName("tabLink");
-      for (i = 0; i < tabLinks.length; i++) {
-        tabLinks[i].style.backgroundColor = "";
-        tabLinks[i].style.color = "";
-      }
-      document.getElementById(pageName).style.display = "block";
-      elmnt.style.backgroundColor = color;
-      elmnt.style.color = fontcolor;
-      document.getElementById(pageName+"_defaultSub").click();
-    }
-    
-    // Get the element with id="defaultOpen" and click on it
-    document.getElementById("defaultOpenMain").click();
-  </script>
-
-</body>
-
-<!-- body ends here -->
-
-</html>
-
-<!----------------------------------------------------------------------------Extras --------------------------------------------------------
-    <a href="https://dblp.org/pid/203/8684.html " target="_blank"><i class="iconify" data-icon="simple-icons:dblp" data-width="40px" data-height="40px"></i></a> &bull;     
-    /* .iconify{color: rgb(192, 192, 41);} */
-
-    <a href="https://dblp.org/pid/203/8684.html" target="_blank"> <i class="ai ai-dblp-square ai-2x"></i></a> &bull;
-    .ai-dblp-square {background: white; color: rgb(192, 192, 41); }
-
-    /* 
-    .facebook { background: #3B5998; color: white;}
-    .twitter { background: #55ACEE;  color: white;}
-    .google { background: #dd4b39; color: white;}
-    .linkedin { background: #007bb5; color: white;}
-    .youtube { background: #bb0000; color: white;
-    } */
-
-    /* Globe */
-    1. <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=5mcvymmbzqu&amp;m=7&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"></script>
-    2. <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=5swgvpvln8s&amp;m=1c&amp;c=e08a22&amp;cr1=e81c1c&amp;f=arial&amp;l=17&amp;cw=ffffff&amp;cb=52993d" async="async"></script>
-
-    <table align="center">
+   </section>
+   <!-- <table border="1" id="cssTable">
       <tr>
-        <td> </td>
-        <td halign=left> 
-          <iframe
-            src="https://www.facebook.com/plugins/share_button.php?href=https://ayandas.me/pubs/2020/07/30/pub-8.html&layout=button&size=large&width=77&height=28&appId=3268236546577201" width="77" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media">
-          </iframe>      
-        </td>
+          <td>Text</td>
+          <td>Text</td>
       </tr>
-    </table>
-  -->
+      </table> -->
+   <!-- 
+      <section class="hero is-light is-small">
+        <div class="hero-body">
+          <div class="container">
+            <div id="results-carousel" class="carousel results-carousel">
+              <div class="item item-steve">
+                <video poster="" id="steve" autoplay controls muted loop height="100%">
+                  <source src="https://homes.cs.washington.edu/~kpar/nerfies/videos/steve.mp4"
+                          type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-chair-tp">
+                <video poster="" id="chair-tp" autoplay controls muted loop height="100%">
+                  <source src="https://homes.cs.washington.edu/~kpar/nerfies/videos/chair-tp.mp4"
+                          type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-shiba">
+                <video poster="" id="shiba" autoplay controls muted loop height="100%">
+                  <source src="https://homes.cs.washington.edu/~kpar/nerfies/videos/shiba.mp4"
+                          type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-fullbody">
+                <video poster="" id="fullbody" autoplay controls muted loop height="100%">
+                  <source src="https://homes.cs.washington.edu/~kpar/nerfies/videos/fullbody.mp4"
+                          type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-blueshirt">
+                <video poster="" id="blueshirt" autoplay controls muted loop height="100%">
+                  <source src="https://homes.cs.washington.edu/~kpar/nerfies/videos/blueshirt.mp4"
+                          type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-mask">
+                <video poster="" id="mask" autoplay controls muted loop height="100%">
+                  <source src="https://homes.cs.washington.edu/~kpar/nerfies/videos/mask.mp4"
+                          type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-coffee">
+                <video poster="" id="coffee" autoplay controls muted loop height="100%">
+                  <source src="https://homes.cs.washington.edu/~kpar/nerfies/videos/coffee.mp4"
+                          type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-toby">
+                <video poster="" id="toby" autoplay controls muted loop height="100%">
+                  <source src="https://homes.cs.washington.edu/~kpar/nerfies/videos/toby2.mp4"
+                          type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+       -->
+   <section class="section">
+   <div class="container is-max-desktop">
+   <!-- Abstract. -->
+   <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+         <h2 class="title is-3">Abstract</h2>
+         <div class="content has-text-justified">
+            In this paper, we leverage CLIP for zero-shot sketch based image retrieval (ZS-SBIR). We are largely inspired by recent advances on foundation models and the unparalleled generalisation ability they seem to offer, but for the first time tailor it to benefit the sketch community. We put forward novel designs on how best to achieve this synergy, for both the category setting and the fine-grained setting ("all"). At the very core of our solution is a prompt learning setup. First we show just via factoring in sketch-specific prompts, we already have a category-level ZS-SBIR system that overshoots all prior arts, by a large margin (24.8%) - a great testimony on studying the CLIP and ZS-SBIR synergy. Moving onto the fine-grained setup is however trickier, and requires a deeper dive into this synergy. For that, we come up with two specific designs to tackle the fine-grained matching nature of the problem: (i) an additional regularisation loss to ensure the relative separation between sketches and photos is uniform across categories, which is not the case for the gold standard standalone triplet loss, and (ii) a clever patch shuffling technique to help establishing instance-level structural correspondences between sketch-photo pairs. With these designs, we again observe significant performance gains in the region of 26.9% over previous state-of-the-art. The take-home message, if any, is the proposed CLIP and prompt learning paradigm carries great promise in tackling other sketch-related tasks (not limited to ZS-SBIR) where data scarcity remains a great challenge. Code and models will be made available.
+            </p>
+         </div>
+      </div>
+   </div>
+   <!--/ Abstract. -->
+   <!-- Paper video. -->
+   <!-- <section class="section">
+      <div class="container is-max-desktop">
+      -- Abstract. --
+      <div class="columns is-centered has-text-centered">
+         <div class="column is-four-fifths">
+            <h2 class="title is-3">Method</h2>
+            <div class="content has-text-justified">
+               </h2>
+               <center>
+                  <img src="./static/images/solution.png" alt="" border=0 height=300 width=650></img></
+               </center>
+               <h5 class="subtitle has-text-centered">
+               The sketch mapper aims to predict the corresponding latent code of associated photo in the manifold of pre-trained GAN.
+			   </h5>
+               &nbsp; 
+            </div>
+         </div>
+      </div>
+   </section> -->
+   
+   
+   <section class="section">
+      <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+         <div class="column is-four-fifths">
+            <h2 class="title is-3">Architecture</h2>
+            <div class="content has-text-justified">
+               </h2>
+               <center>
+                  <img src="./static/images/arch.png" alt="" border=0 height=300 width=650></img></
+               </center>
+               <h5 class="subtitle has-text-centered">
+                  Cross-category FG-ZS-SBIR. A common (photo-sketch) learnable visual prompt shared across categories is trained using CLIP’s image encoder over three losses as shown. CLIP’s textencoder based classification loss is used during training.
+			      </h5
+               &nbsp; 
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="hero">
+   <div class="hero-body">
+   <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+         <div class="column is-four-fifths">
+            <h2 class="title is-3">Results</h2>
+            <div class="content has-text-justified">
+               <center>
+                  <img src="static/images/qual_cat.png" alt="this slowpoke moves" border=0 height=200 width=1500/>
+               </center>
+               <h5 class="subtitle has-text-centered">
+                  Qualitative results of ZS-SBIR on Sketchy by a baseline (blue) method vs Ours (green).
+			   <br>
+			   <br>			
+               <center>
+                  <img src="static/images/qual_FG.png" alt="this slowpoke moves" border=0 height=200 width=600/>
+               </center>
+               <h5 class="subtitle has-text-centered">
+                  Qualitative results of FG-ZS-SBIR on Sketchy by a baseline (blue) method vs Ours (green). The images are arranged in increasing order of the ranks beside their corresponding sketch-query, i.e the left-most image was retrieved at rank-1 for every category. The true-match for every query, if appearing in top-5 is marked in a green frame. Numbers denote the rank at which that true-match is retrieved for every corresponding sketch-query.
+            <br>
+			   <!-- <br>
+               <center>
+                  <img src="static/images/noisy.gif" alt="this slowpoke moves" border=0 height=400 width=800/>
+               </center>
+               <h5 class="subtitle has-text-centered">
+               Effect of noisy stroke addition (left) and generation from partial sketches (right).		
+			   <br>
+			   <br>
+			   <center>
+                  <img src="static/images/unseen.gif" alt="this slowpoke moves" border=0 height=400 width=800/>
+               </center>
+               <h5 class="subtitle has-text-centered">
+               Generalisation across sketch styles.	
+			   <br>
+			   <br>
+			   <center>
+                  <img src="static/images/multiModal.gif" alt="this slowpoke moves" border=0 height=400 width=800/>
+               </center>
+               <h5 class="subtitle has-text-centered">
+               Multi-modal generation showing varied colour and, appearance features. Reference photo shown in inset.		
+			   <br>
+			   <br>
+			   <center>
+                  <img src="static/images/suppl.gif" alt="this slowpoke moves" border=0 height=400 width=800/>
+               </center>
+               <h5 class="subtitle has-text-centered">
+			   Qualitative results on ShoeV2, ChairV2, and Handbag datasets.				    -->
+            </div>
+         </div>
+      </div>
+   </div>
+   <section class="section" id="BibTeX">
+      <div class="container is-max-desktop content">
+         <h2 class="title">BibTeX</h2>
+         <pre><code>@article{koley2023picture,
+  title={{CLIP for All Things Zero-Shot Sketch-Based Image Retrieval, Fine-Grained or Not}},
+  author={Aneeshan Sain and Ayan Kumar Bhunia and Pinaki Nath Chowdhury and Subhadeep Koley and Tao Xiang and Yi-Zhe Song},
+  booktitle={CVPR},
+  year={2023}
+}</code></pre>
+      </div>
+   </section>
+   <script>
+      const viewers = document.querySelectorAll(".image-compare");
+      viewers.forEach((element) => {
+          let view = new ImageCompare(element, {
+              hoverStart: true,
+              addCircle: true
+          }).mount();
+      });
+      
+      $(document).ready(function () {
+          var editor = CodeMirror.fromTextArea(document.getElementById("bibtex"), {
+              lineNumbers: false,
+              lineWrapping: true,
+              readOnly: true
+          });
+          $(function () {
+              $('[data-toggle="tooltip"]').tooltip()
+          })
+      });
+   </script>
+   <br>
+   <p style="text-align:center">Copyright © Aneeshan Sain | Last updated: 24 Mar 2023 |Template Credit: <a href="https://nerfies.github.io/"> Nerfies</a></p>
+   </body>
+</html>
