@@ -17,7 +17,7 @@ In this paper, we leverage CLIP for zero-shot sketch based image retrieval (ZS-S
  
 ## Architecture
 
-Cross-category FG-ZS-SBIR. A common (photo-sketch) learnable visual prompt shared across categories is trained using CLIP’s image encoder over three losses as shown. CLIP’s textencoder based classification loss is used during training.
+Cross-category FG-ZS-SBIR. A common (photo-sketch) learnable visual prompt shared across categories is trained using CLIP’s image encoder over three losses as shown. CLIP’s text-encoder based classification loss is used during training.
 
 ![arch](https://github.com/aneeshan95/Sketch_LVM/blob/main/static/images/arch.png?raw=true)
 
