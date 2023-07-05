@@ -1,5 +1,5 @@
 # Sketch_LVM
-## Official repository of _CLIP for All Things Zero-Shot Sketch-Based Image Retrieval, Fine-Grained or Not_
+### Official repository of _CLIP for All Things Zero-Shot Sketch-Based Image Retrieval, Fine-Grained or Not_
 
 Accepted in **CVPR 2023**
 
