@@ -3,8 +3,12 @@
 
 Accepted in **CVPR 2023**
 
-[**Paper**](https://arxiv.org/pdf/2303.13440.pdf) | [**arXiv**](https://arxiv.org/abs/2303.13440) | [**Video**](https://www.youtube.com/watch?v=ImcQFsS1SfE)
- | [**Project Page**](https://aneeshan95.github.io/Sketch_LVM/)
+[![paper](https://img.shields.io/badge/arXiv-Paper-brightgreen)](https://arxiv.org/pdf/2303.13440.pdf)
+[![supplement](https://img.shields.io/badge/Supplementary-Material-B85252)](https://openaccess.thecvf.com/content/CVPR2023/supplemental/Sain_CLIP_for_All_CVPR_2023_supplemental.pdf)
+[![video](https://img.shields.io/badge/Video-Presentation-F9D371)](https://www.youtube.com/watch?v=ImcQFsS1SfE)
+[![Project Page](https://img.shields.io/badge/Project-Page-blue)](https://aneeshan95.github.io/Sketch_LVM/)
+
+[//]: <>[**Paper**](https://arxiv.org/pdf/2303.13440.pdf) | [**arXiv**](https://arxiv.org/abs/2303.13440) | [**Video**](https://www.youtube.com/watch?v=ImcQFsS1SfE) | [**Project Page**](https://aneeshan95.github.io/Sketch_LVM/)
  
 ## Abstract
  
