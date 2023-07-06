@@ -1,7 +1,6 @@
 # Sketch_LVM
 ### Official repository of _CLIP for All Things Zero-Shot Sketch-Based Image Retrieval, Fine-Grained or Not_
-
-## Accepted in **CVPR 2023**
+## **CVPR 2023**
 
 [![paper](https://img.shields.io/badge/arXiv-Paper-brightgreen)](https://arxiv.org/pdf/2303.13440.pdf)
 [![supplement](https://img.shields.io/badge/Supplementary-Material-F9D371)](https://openaccess.thecvf.com/content/CVPR2023/supplemental/Sain_CLIP_for_All_CVPR_2023_supplemental.pdf)
