@@ -19,11 +19,23 @@ Cross-category FG-ZS-SBIR. A common (photo-sketch) learnable visual prompt share
 
 ![arch](https://github.com/aneeshan95/Sketch_LVM/blob/main/static/images/arch.png?raw=true)
 
- ## Datasets
+## Datasets
 For ZS-SBIR we used the [Sketchy](https://github.com/AnjanDutta/sem-pcyc/) (extended), [TUBerlin](https://github.com/AnjanDutta/sem-pcyc/) and [QuickDraw dataset](https://github.com/googlecreativelab/quickdraw-dataset) (a smaller version).
 For Fine-grained ZS-SBIR we used the [Sketchy](https://github.com/AnjanDutta/sem-pcyc/) (basic) dataset with fine-grained sketch-photo associations.
 
+
+## Code
  
+ A workable basic version of the code for CLIP adapted for ZS-SBIR has been uploaded.
+ - `src` folder holds the source files.
+ - `experiments` folder holds the executable wrapper for the model with particular specifications.
+
+An example command to run the code is given below:
+```shell
+$ cd Sketch_LVM
+$ python -m experiments.LN_prompt --exp_name=LN_prompt --n_prompts=3 --clip_LN_lr=1e-6 --prompt_lr=1e-4 --batch_size=192 --workers=128
+```
+
 ## Qualitative Results
 
 Qualitative results of ZS-SBIR on Sketchy by a baseline (blue) method vs Ours (green).
@@ -39,18 +51,6 @@ Qualitative results of FG-ZS-SBIR on Sketchy by a baseline (blue) method vs Ours
 Quantitative results of our method against a few SOTAs.
 ![qualitative_FG](https://github.com/aneeshan95/Sketch_LVM/blob/main/static/images/quant.png?raw=true)
 
-
- ## Code
- 
- A workable basic version of the code for CLIP adapted for ZS-SBIR has been uploaded.
- - `src` folder holds the source files.
- - `experiments` folder holds the executable wrapper for the model with particular specifications.
-
-An example command to run the code is given below:
-```shell
-$ cd Sketch_LVM
-$ python -m experiments.LN_prompt --exp_name=clip_split5 --n_prompts=3 --clip_lr=1e-6 --data_split=0.5
-```
 
 The code for cross-category Fine-Grained ZS-SBIR will be uploaded in some time.
 
