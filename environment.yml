@@ -1,0 +1,19 @@
+name: sketch_LVM
+channels:
+  - pytorch
+  - conda-forge
+  - nvidia
+  - defaults
+
+dependencies:
+  - python=3.8
+  - pytorch==1.13.1
+  - torchvision==0.14.1
+  - torchaudio==0.13.1
+  - pytorch-cuda=11.7
+  - tqdm
+  - regex
+  - ftfy
+  - pip:
+    - pytorch-lightning=1.7.3
+    - torchmetrics==0.9.3
