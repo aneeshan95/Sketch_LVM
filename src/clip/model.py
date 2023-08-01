@@ -228,7 +228,7 @@ class VisionTransformer(nn.Module):
         x = x + self.positional_embedding.to(x.dtype)
         if prompt is not None:
             # prompt should be of shape [*, N, width]
-            x = torch.cat([prompt, x], dim=1) # [*, grid ** 2 + 1 + N, width]
+            x = torch.cat([x, prompt], dim=1) # [*, grid ** 2 + 1 + N, width]
         x = self.ln_pre(x)
 
         x = x.permute(1, 0, 2)  # NLD -> LND
