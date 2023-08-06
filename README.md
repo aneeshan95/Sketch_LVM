@@ -20,8 +20,12 @@ Cross-category FG-ZS-SBIR. A common (photo-sketch) learnable visual prompt share
 ![arch](https://github.com/aneeshan95/Sketch_LVM/blob/main/static/images/arch.png?raw=true)
 
 ## Datasets
-For ZS-SBIR we used the [Sketchy](https://drive.google.com/file/d/1vGtssYgM6_r0ph8f_ZPWzIHvHL0yS8CN/view?usp=sharing) (extended), [TUBerlin](https://github.com/AnjanDutta/sem-pcyc/) and [QuickDraw dataset](https://github.com/googlecreativelab/quickdraw-dataset) (a smaller version).
-For Fine-grained ZS-SBIR we used the [Sketchy](https://github.com/AnjanDutta/sem-pcyc/) (basic) dataset with fine-grained sketch-photo associations.
+- For ZS-SBIR:
+  - [Sketchy](https://drive.google.com/file/d/1vGtssYgM6_r0ph8f_ZPWzIHvHL0yS8CN/view?usp=sharing) (extended).
+  - [TUBerlin](https://github.com/AnjanDutta/sem-pcyc/)
+  - [QuickDraw](https://github.com/googlecreativelab/quickdraw-dataset) (a smaller version).
+- For Fine-grained ZS-SBIR:
+  - [Sketchy](https://github.com/AnjanDutta/sem-pcyc/) (basic) dataset having fine-grained sketch-photo associations.
 
 
 ## Code
